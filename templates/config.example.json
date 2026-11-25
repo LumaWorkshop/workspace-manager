@@ -1,0 +1,75 @@
+{
+  "machine": "macbook-personal",
+  "workspace_root": "~/Workspace",
+  "dotfiles": "~/.local/share/chezmoi",
+  "bin_link": "~/.local/bin/workspace",
+  "code": {
+    "orgs": [
+      "personal",
+      "org-1",
+      "org-2",
+      "third-party",
+      "experiments"
+    ],
+    "repos": [
+      {
+        "url": "git@github.com:you/workspace-manager.git",
+        "path": "code/lumaworkshop/workspace-manager"
+      },
+      {
+        "url": "git@github.com:you/some-org-1-project.git",
+        "path": "code/org-1/some-org-1-project"
+      }
+    ]
+  },
+  "notebooks": {
+    "repos": [
+      {
+        "url": "git@github.com:you/market-research.git",
+        "path": "notebooks/market-research"
+      }
+    ]
+  },
+  "studio": {
+    "categories": [
+      "productions",
+      "music",
+      "sound-effects",
+      "design",
+      "video-editor"
+    ]
+  },
+  "knowledge": {
+    "repos": [
+      {
+        "url": "git@github.com:you/second-brain.git",
+        "path": "knowledge/second-brain"
+      },
+      {
+        "url": "https://github.com/bytebytego/system-design.git",
+        "path": "knowledge/bytebytego"
+      }
+    ]
+  },
+  "toolkits": {
+    "repos": [
+      {
+        "url": "git@github.com:you/my-mcp-server.git",
+        "path": "toolkits/my-mcp-server"
+      },
+      {
+        "url": "https://github.com/someone/useful-tool.git",
+        "path": "toolkits/useful-tool"
+      }
+    ]
+  },
+  "machines": {
+    "macbook-personal": {
+      "skip": []
+    },
+    "macbook-work": {
+      "skip": ["studio", "notebooks"],
+      "code_orgs": ["org-1", "third-party"]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+## User config (may be a cloned private repo)
+config/
+.env
+
+## System files
+.DS_Store
+
+## Python
+__pycache__/
+*.pyc
